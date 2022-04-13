@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="asp_final_project.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header" 
+            style="background-color:#174F67; height: 95px; top: 0px; left: 0px;">
+            <div class="title" >
+             
+           <br />
+            
+                
+            
+                <h1 style="font-size: x-large" align="left" >
+              <asp:Label ID="ico" runat="server" align="left"></asp:Label>
+                     &nbsp;
+                     KOREAN COMPUTER ACADEMY
+
+                </h1>
+            </div>
+            <div class="loginDisplay">
+           <asp:Button ID="backupbtn0"  Text ="Log out" runat="server" align="right" 
+                    onclick="backupbtn0_Click" />  
+             
+                <asp:Button ID="backupbtn"  Text ="Backup" runat="server" 
+                    onclick="backupbtn_Click" />
+                    
+            </div>
+            <div class="clear hideSkiplink">
+                
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
